@@ -1,0 +1,36 @@
+name: Проверка сдачи
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Unit-тесты проверки
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s checks -p 'test_*.py' -v
+
+  check:
+    name: lesson_${{ matrix.lesson }}
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lesson: ['02', '03']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Проверить комплект сдачи
+        run: python checks/check_submission.py --lesson ${{ matrix.lesson }}
