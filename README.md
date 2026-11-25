@@ -6,13 +6,13 @@
 | --- | --- | --- |
 | Проект, задача и результат | [lesson_02](lesson_02/README.md) | [texts.md](lesson_02/texts.md) |
 | Уточняем требования | [lesson_03](lesson_03/README.md) | [texts.md](lesson_03/texts.md) |
-| От требований к плану работ | [lesson_04](lesson_04/README.md) | [texts.md](https://github.com/MaximBytecamp/project-management-start-template/blob/main/lesson_04/texts.md) |
+| От требований к плану работ | [lesson_04](lesson_04/README.md) | [texts.md](lesson_04/texts.md) |
 
 Номера папок совпадают с номерами тем курса.
 
 ## Сдача через сайт GitHub
 
-В папке каждой практики находятся ссылки на карточки Битрикс24 и материалы для проверки. Для тем 2 и 3 ссылки собраны в `report.md`. Для темы 4 план работ и ссылки на задачи приведены в README. Результаты автоматических проверок доступны во вкладке [Actions](https://github.com/yrslava777-byte/project-management/actions).
+В папке каждой практики находятся ссылки на карточки Битрикс24 и материалы для проверки. Ссылки для сдачи собраны в `report.md`. Для темы 4 описание плана также приведено в README. Результаты автоматических проверок доступны во вкладке [Actions](https://github.com/yrslava777-byte/project-management/actions).
 
 ## Скриншоты
 
